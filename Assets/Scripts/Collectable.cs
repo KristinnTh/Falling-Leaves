@@ -16,6 +16,11 @@ public class Collectable : MonoBehaviour
     // Awake is called when the script instance is being loaded.
     // Increments the total number of collectable items each time a new one is created.
     void Awake() => total++;
+    //Method to reset the collectible total count
+    public static void ResetTotal()
+    {
+        total = 0;
+    }
 
 // OnTriggerEnter is called when another collider enters the trigger collider attached to this GameObject.
     // Used to detect when the player interacts with the collectable item.

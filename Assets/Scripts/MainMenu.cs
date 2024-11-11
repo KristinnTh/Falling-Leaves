@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
+        Collectable.ResetTotal(); //Reset the total collectible count
         SceneManager.LoadSceneAsync("Level1");
     }
     public void QuitGame()
